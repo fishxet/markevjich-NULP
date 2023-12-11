@@ -17,6 +17,7 @@ const html_task = () => src('app/*.html')
 
 const css_task = () => src('app/css/*.css')
     .pipe(dest('dist/css'));
+
 const scss_task = () => src('app/scss/*.scss')
     .pipe(concat('index.scss'))
     .pipe(sass())

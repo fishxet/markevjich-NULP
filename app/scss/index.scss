@@ -21,6 +21,9 @@ a{
   }
   ul {
     width: 100%;
+    li {
+      padding: 15px;
+    }
     .nav-item {
       padding-left: 25px;
     }
@@ -36,7 +39,9 @@ a{
 }
 
 .content-menu {
+  background-color: #f0f3f6;
   width:100%;
+  display: inline-block;
   .header-wrap {
     .navbar-header {
       padding: 0;
@@ -113,6 +118,60 @@ a{
     input{
       border: none;
       background: #d5dde4;
+    }
+  }
+  .content-wrap {
+    overflow-y:scroll;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    margin: 0;
+    width: calc(100% - 160px);
+    height: calc(100vh - 71px - 50px);
+    h2{
+      color: #4c5e70;
+      font-weight: bold;
+    }
+    p {
+      color: #8a9aab;
+    }
+    .hline {
+      border-bottom: 2px solid #b9c6d3;
+      height: 1px;
+      width: 100%;
+    }
+    .WavyLines {
+      margin-top: 30px;
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      h2{
+        display: inline-block;
+        font-weight: bold;
+        color: #4c5e70;
+      }
+      p {
+        display: block;
+        color: #8a9aab
+      }
+      .dropdown {
+        display: inline-block;
+        float: right;
+        button {
+          border: none;
+          background-color: white;
+        }
+        .dropdown-item {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    h2 {
+      display: inline-block;
+    }
+    .dropdown {
+      float: right;
     }
   }
 }

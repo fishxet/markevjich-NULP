@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JustFree | pm_23_14</title>
     <link rel="stylesheet" href = "css/bootstrap.min.css">
-    <link   rel="stylesheet" href = "css/index.min.css">
+    <link  rel="stylesheet" href = "css/index.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div class = "d-flex">
-    <div class = "sidebar-menu">
+    <div class = "sidebar-menu ">
         <div class = "d-flex justify-content-center logo">
             <img src="img/justFree.png">
         </div>
-        <div class="d-flex">
+        <div class="d-flex ">
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
                 <li class = nav-item>
                     <a href="#"><img src = "img/Dashboard.png"> Home</a>
@@ -39,7 +41,7 @@
             </ul>
         </div>
     </div>
-    <div class = "content-menu d-flex">
+    <div class = "content-menu ">
         <div class = "header-wrap">
             <nav class="navbar-header d-flex">
                 <div class="container d-flex">
@@ -67,12 +69,50 @@
                         </ul>
                     </div>
                     <img src="../app/img/Plogo.png" class = "plogo">
+                    <p></p>
                 </div>
             </nav>
         </div>
+        <div class = "content-wrap container-fluid" style="width: 100%">
+            <h2>Hi Leonid M.</h2>
+            <p>Checkout your latest projects and their progress</p>
+            <div class = "hline"></div>
+            <div class = "WavyLines">
+                <h2>Wavy Lines</h2>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span id = "WavyWeek">THIS WEEK</span>
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" id="WavySelectWeek" onclick="Wavy()" href="#">LAST WEEK</a></li>
+                    </ul>
+                </div>
+                <p>Working hours</p>
+                <canvas  id="earning_graph" height="100px"></canvas>
+            </div>
+            <h2>Crunch some numbers</h2>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span id = "WavyWeek">THIS WEEK</span>
+                </button>
+                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" id="WavySelectWeek" href="#">LAST WEEK</a></li>
+                </ul>
+            </div>
+            <p>See how your projects are progressing via the new statistics engine</p>
+            <div class = "hline"></div>
+            <div class="SpGrHolder">
+                <div class = "spans">
+                    
+                </div>
+            </div>
+        </div>
     </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/index.min.js"></script>
+<script>
+</script>
 </body>
 
 </html>

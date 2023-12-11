@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/fishxet/markevjich-NULP#readme",
   "dependencies": {
+    "chart.js": "^4.4.1",
     "gulp": "^4.0.2"
   },
   "devDependencies": {
