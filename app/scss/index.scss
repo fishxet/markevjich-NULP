@@ -87,6 +87,7 @@ a{
           height: 25px;
           margin: 0 15px 0 15px;
         }
+        #userName { a {color: rgb(76,95,112);}}
         img {
           height: 20px;
           width: auto;
@@ -94,6 +95,7 @@ a{
         .dropdown {
           .dropdown-toggle {
             border: none;
+            color: rgb(62,195,232);
             background-color: #d5dde4;
           }
           .dropdown-menu-dark{
@@ -155,11 +157,14 @@ a{
         color: #8a9aab
       }
       .dropdown {
+        padding: 0;
+        padding-top: 20px;
         display: inline-block;
         float: right;
         button {
           border: none;
           background-color: white;
+          color: rgb(79,105,121);
         }
         .dropdown-item {
           background-color: white;
@@ -168,10 +173,160 @@ a{
       }
     }
     h2 {
+      margin-top: 15px;
       display: inline-block;
     }
     .dropdown {
+      padding-top: 20px;
       float: right;
+      span {
+        color: rgb(131,149,166);
+      }
+      button {
+        border: none;
+        border-radius:25px;
+        width: 100px;
+        background-color: rgb(218,225,232);
+        color: black;
+        padding: 10px;
+      }
+    }
+    .SpGrHolder {
+      display: flex;
+      padding-top: 50px;
+      .spans {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        .columns {
+          padding: 50px;
+          justify-content: center;
+          border-bottom: 1px solid rgb(230,234,240);
+          img {
+            float: right;
+          }
+          div {
+            display: inline-block;
+            align-items: center;
+            h4{
+              padding-left: 15px;
+              color: rgb(76,94,112);
+            }
+          }
+        }
+      }
+      .graphic {
+        height: 579px;
+        padding: 20px;
+        margin-left: 50px;
+        width: calc(100% - 450px);
+        background-color: white;
+        .dropdown {
+          display: inline-block;
+          float: right;
+          padding: 0;
+          button {
+            border: none;
+            background-color: white;
+            color: rgb(79,105,121);
+          }
+          .dropdown-item {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+
+    }
+    .Progress{
+      margin-top: 35px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      .ProgBar {
+        display: flex;
+        flex-basis: fit-content;
+        h4{margin: 0; color: rgb(75,94,111);}
+        p{margin: 0; color: rgb(123,141,160);}
+        padding-left: 15px;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        background: white;
+        margin-bottom: 15px;
+        padding: 30px;
+        img {
+          display: inline-block;
+        }
+        span {
+          padding-left: 25px;
+          display: inline-block;
+        }
+        .upd {
+          display: inline-block;
+          padding-left: 300px;
+          height: 100%;
+        }
+        .vl {
+          border-left: 2px solid #b9c6d3;
+          height: 25px;
+          margin: 0 15px 0 15px;
+        }
+      }
+    }
+    .container-fluid {
+      margin-top: 30px;
+      display: flex;
+      height: 500px;
+      justify-content: space-between;
+
+      .st{
+        background-color: white;
+        width: 475px;
+        display: flex;
+        flex-direction: column;
+        .ellipse {
+          padding-left: 125px;
+          padding-right: 125px;
+          margin-bottom: 50px;
+        }
+        .Line {
+          padding-top: 100px;
+          padding-right: 25px;
+          padding-left: 25px;
+        }
+        h4{margin: 0; color: rgb(75,94,111);}
+        h2 {color: rgb(75,94,111);}
+        div {
+          ul {
+
+            width: 100%;
+            li{
+              display: flex;
+              width: calc(100% - 60px);
+              img {
+                margin-top: 7px;
+                height: 10px;
+              }
+              a{
+                padding-left: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                span{
+                  color: rgb(80, 106, 122);
+
+                }
+              }
+            }
+          }
+        }
+        p{margin: 0; color: rgb(123,141,160);}
+        padding: 20px;
+      }
     }
   }
 }
